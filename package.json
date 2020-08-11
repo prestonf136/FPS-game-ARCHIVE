@@ -1,0 +1,11 @@
+{
+  "name": "gameserver",
+  "version": "1.0.0",
+  "description": "A gameserver written in node for NONAME-fps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

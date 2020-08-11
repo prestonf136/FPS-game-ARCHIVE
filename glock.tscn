@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://source/g18c gen4 fbx.fbx" type="PackedScene" id=1]
+
+[node name="glock" type="Spatial"]
+
+[node name="g18c gen4 fbx" parent="." instance=ExtResource( 1 )]

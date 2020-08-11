@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Enemy.gd" type="Script" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.405712, 1.16402, 1.49025 )
+
+[sub_resource type="CubeMesh" id=2]
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.0705882, 0.458824, 0.592157, 1 )
+
+[node name="Badguy" type="KinematicBody" groups=[
+"Enemy",
+]]
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1.04579, 0, 0, 0, 1.47238, 0, 0, 0, 0.390241, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CollisionShape"]
+transform = Transform( 0.335897, 0, 0, 0, 0.979926, 0, 0, 0, 0.865237, 0, 0, 0 )
+use_in_baked_light = true
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
